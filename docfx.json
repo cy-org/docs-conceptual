@@ -1,37 +1,170 @@
 {
   "build": {
+    "markdownEngineName": "dfm-latest",
     "content": [
+      {
+        "files": [
+          "api/**/*.yml",
+          "api/**/*.md"
+        ],
+        "exclude": [
+          "api/overwrites/**",
+          "samples/**/*.*",
+          "**/includes/**",
+          "***/contributing.md"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "docs",
+        "dest": ".",
+        "exclude": [
+          "toc.md",
+          "api/overwrites/**",
+          "samples/**/*.*",
+          "**/includes/**",
+          "***/contributing.md"
+        ]
+      },
       {
         "files": [
           "**/*.md"
         ],
+        "src": "_csharplang/spec",
+        "dest": "csharp/language-reference/language-specification",
         "exclude": [
-          "**/obj/**",
-          "**/includes/**",
           "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "LICENSE.md",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "_vblang/spec",
+        "dest": "visual-basic/reference/language-specification",
+        "exclude": [
+          "README.md",
+          "LICENSE.md",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "core/**/*.md",
+          "core/**/*.yml"
+        ]
+      },
+      {
+        "files": [
+          "docs/toc.md",
+          "toc.yml",
+          "index.md"
         ]
       }
     ],
     "resource": [
       {
         "files": [
+          "images/**",
           "**/*.png",
-          "**/*.jpg"
+          "**/*.svg",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp"
         ],
+        "src": "docs",
+        "dest": ".",
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "samples/**/*.*",
+          "_themes/DocPacker/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.svg",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp"
+        ],
+        "src": "add",
+        "dest": ".",
+        "exclude": [
+          "metadata/**/*.*"
         ]
       }
     ],
-    "overwrite": [],
+    "overwrite": {
+        "files": [
+          "api/overwrites/**/*.md",
+          "apidoc/*.md"
+        ]
+      },
     "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
-    "template": [],
-    "dest": "cy-org-docs-conceputal"
+    "globalMetadata": {
+      "breadcrumb_path": "/dotnet/toc.json",
+      "_displayLangs": [
+        "csharp"
+      ],
+      "author": "dotnet-bot",
+      "ms.author": "dotnetcontent",
+      "manager": "wpickett",
+      "searchScope": [".NET"],
+      "uhfHeaderId": "MSDocsHeader-DotNet",
+      "apiPlatform": "dotnet"
+    },
+    "fileMetadata": {
+      "ms.prod": {
+        "api/**.yml": ".net",
+        "_csharplang/spec/*.md": ".net",
+        "_vblang/spec/*.md": ".net"
+      },
+      "ms.topic": {
+        "api/**.yml": "managed-reference",
+        "_csharplang/spec/*.md": "language-reference",
+        "_vblang/spec/*.md": "language-reference"
+     },
+      "langs": {
+        "api/**.yml": ["csharp", "vb", "cpp"]
+      },
+      "ROBOTS": {
+        "api/**.yml": "NOINDEX, NOFOLLOW"
+      },
+      "ms.author": {
+        "_csharplang/spec/*.md": "wiwagn",
+        "_vblang/spec/*.md": "wiwagn"
+      },
+      "ms.technology": {
+        "_csharplang/spec/*.md": "devlang-csharp",
+        "csharp/quick-starts/**": "csharp-interactive",
+        "_vblang/spec/*.md": "devlang-visual-basic"
+      },
+      "ms.date": {
+        "_csharplang/spec/*.md": "07/01/2017",
+        "_vblang/spec/*.md": "07/21/2017"
+      },
+      "open_to_public_contributors": {
+        "_csharplang/spec/*.md": false,
+        "_vblang/spec/*.md": false
+      }
+    },
+    "dest": "_site",
+    "template": [
+      "docs.html"
+    ],
+    "xref": [
+      "_zip/vs.110.zip",
+      "_zip/vs.140.zip",
+      "_zip/office15.zip",
+      "_zip/missingapi.yml",
+      "_zip/msdnsmallset.yml"
+    ],
+    "lruSize": 0
   }
 }
