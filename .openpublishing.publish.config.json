@@ -27,6 +27,7 @@
       "build_source_folder": ".",
       "build_output_subfolder": "cy-org-docs-conceputal",
       "locale": "en-us",
+      "enable_filemap_share": true,
       "monikers": [
         "netframework-4.5.1",
         "netframework-4.5.2",
