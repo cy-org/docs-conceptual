@@ -1,6 +1,6 @@
 {
   "build": {
-    "xrefService": ["https://xrefppe.docs.microsoft.com/query/?uid={uid}&vendor=cy-org-dotnet"],
+    "xrefService": ["https://xrefppe.docs.microsoft.com/query/?uid={uid}&vendor=cy-org-dotnet|> addQueryString branch {%branch%}"],
     "markdownEngineName": "dfm-latest",
     "content": [
       {
