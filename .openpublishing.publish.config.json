@@ -73,7 +73,7 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "onlineEditor"
+      "branch": "previewDemo"
     },
     {
       "path_to_root": "_themes.pdf",
