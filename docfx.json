@@ -1,6 +1,5 @@
 {
   "build": {
-    "xrefService": ["https://xrefppe.docs.microsoft.com/query?uid={uid}&vendor=cy-org-dotnet|> addQueryString branch {%branch%}"],
     "markdownEngineName": "dfm-latest",
     "content": [
       {
@@ -160,11 +159,11 @@
       "docs.html"
     ],
     "xref": [
-      "_zip/vs.110.zip",
-      "_zip/vs.140.zip",
-      "_zip/office15.zip",
-      "_zip/missingapi.yml",
-      "_zip/msdnsmallset.yml"
+	  "dotnet-xref/_zip/vs.110.zip",
+      "dotnet-xref/_zip/vs.140.zip",
+      "dotnet-xref/_zip/office15.zip",
+      "dotnet-xref/_zip/missingapi.yml",
+      "dotnet-xref/_zip/msdnsmallset.yml"
     ],
     "lruSize": 0
   }

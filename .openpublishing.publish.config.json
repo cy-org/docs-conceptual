@@ -89,6 +89,16 @@
       "path_to_root": "_vblang",
       "url": "https://github.com/dotnet/vblang",
       "branch": "master"
+    },
+	{
+      "path_to_root": "dotnet-xref",
+      "url": "https://github.com/MicrosoftDocs/dotnet-xref",
+      "branch": "yu-update-xref"
+    },
+    {
+      "path_to_root": "samples",
+      "url": "https://github.com/cy-org/samples-store",
+      "branch": "master"
     }
   ],
   "dependent_packages": [
