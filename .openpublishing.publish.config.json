@@ -98,7 +98,7 @@
   "git_repository_branch_open_to_public_contributors": "master",
   "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/docs",
   "need_generate_intellisense": false,
-  "need_generate_pdf_url_template": true,
+  "need_generate_pdf_url_template": false,
   "need_pr_comments": false,
   "need_preview_pull_request": true,
   "notification_subscribers": [],
