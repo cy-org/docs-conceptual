@@ -1,10 +1,63 @@
 {
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf",
+      "Intellisense"
+    ],
+    "master": [
+      "Publish",
+      "Pdf",
+      "PDF"
+    ]
+  },
+  "branches_to_filter": [],
+  "dependent_packages": [
+    {
+      "id": "memberpage.plugins",
+      "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
+      "path_to_root": "_dependentPackages/memberpage.plugins",
+      "target_framework": "net45",
+      "version": "latest"
+    }
+  ],
+  "dependent_repositories": [
+    {
+      "branch": "master",
+      "branch_mapping": {},
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft"
+    },
+    {
+      "branch": "master",
+      "branch_mapping": {},
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf"
+    },
+    {
+      "branch": "master",
+      "branch_mapping": {},
+      "path_to_root": "_csharplang",
+      "url": "https://github.com/dotnet/csharplang"
+    },
+    {
+      "branch": "master",
+      "branch_mapping": {},
+      "path_to_root": "_vblang",
+      "url": "https://github.com/dotnet/vblang"
+    }
+  ],
   "docsets_to_publish": [
     {
-      "docset_name": "cy-org-docs-conceputal",
-      "build_source_folder": ".",
+      "build_entry_point": "docs",
       "build_output_subfolder": "cy-org-docs-conceputal",
+      "build_source_folder": ".",
+      "customized_template_paths": [
+        "_dependentPackages/memberpage.plugins/content"
+      ],
+      "docset_name": "cy-org-docs-conceputal",
       "locale": "en-us",
+      "moniker_ranges": [],
       "monikers": [
         "netframework-4.5.1",
         "netframework-4.5.2",
@@ -28,81 +81,29 @@
         "xamarinandroid-7.1",
         "xamarinmac-3.0"
       ],
-      "moniker_ranges": [],
       "open_to_public_contributors": true,
+      "pdf_build_exclude_tocs": [],
+      "template_folder": "_themes",
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
         "Tutorial": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "customized_template_paths": [
-        "_dependentPackages/memberpage.plugins/content"
-      ],
-      "pdf_build_exclude_tocs": []
+      }
     }
   ],
-  "notification_subscribers": [],
-  "branches_to_filter": [],
-  "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/docs",
   "git_repository_branch_open_to_public_contributors": "master",
-  "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
-  "need_pr_comments": false,
-  "dependent_repositories": [
-    {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "_themes.pdf",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "_csharplang",
-      "url": "https://github.com/dotnet/csharplang",
-      "branch": "master",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "_vblang",
-      "url": "https://github.com/dotnet/vblang",
-      "branch": "master",
-      "branch_mapping": {}
-    }
-  ],
-  "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "Pdf",
-      "Intellisense"
-    ],
-    "master": [
-      "Publish",
-      "Pdf"
-    ]
-  },
+  "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/docs",
+  "need_generate_intellisense": false,
   "need_generate_pdf_url_template": true,
+  "need_pr_comments": false,
+  "need_preview_pull_request": true,
+  "notification_subscribers": [],
+  "skip_source_output_uploading": false,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
   },
-  "need_generate_intellisense": false,
-  "dependent_packages": [
-    {
-      "id": "memberpage.plugins",
-      "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
-      "path_to_root": "_dependentPackages/memberpage.plugins",
-      "target_framework": "net45",
-      "version": "latest"
-    }
-  ],
   "toc_path_need_to_split": "api/toc.yml"
 }
