@@ -1,26 +1,4 @@
 {
-  "need_generate_intellisense": false,
-  "need_preview_pull_request": true,
-  "need_pr_comments": false,
-  "need_generate_pdf_url_template": true,
-  "git_repository_branch_open_to_public_contributors": "master",
-  "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/docs",
-  "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "Pdf",
-      "Intellisense"
-    ],
-    "master": [
-      "Publish",
-      "Pdf"
-    ]
-  },
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
   "docsets_to_publish": [
     {
       "docset_name": "cy-org-docs-conceputal",
@@ -50,6 +28,7 @@
         "xamarinandroid-7.1",
         "xamarinmac-3.0"
       ],
+      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -67,29 +46,55 @@
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/docs",
+  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "need_pr_comments": false,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_csharplang",
       "url": "https://github.com/dotnet/csharplang",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_vblang",
       "url": "https://github.com/dotnet/vblang",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf",
+      "Intellisense"
+    ],
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "need_generate_pdf_url_template": true,
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "need_generate_intellisense": false,
   "dependent_packages": [
     {
       "id": "memberpage.plugins",
