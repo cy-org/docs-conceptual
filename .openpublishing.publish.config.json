@@ -7,7 +7,10 @@
     ],
     "master": [
       "Publish",
-      "Pdf",
+      "Pdf"
+    ],
+    "previewDemo": [
+      "Publish",
       "PDF"
     ]
   },
