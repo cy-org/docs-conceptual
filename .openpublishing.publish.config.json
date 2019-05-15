@@ -44,13 +44,17 @@
       "pdf_build_exclude_tocs": []
     }
   ],
-  "notification_subscribers": [],
+  "notification_subscribers": [
+    "test@abc.com"
+  ],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/docs",
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "need_pr_comments": false,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -86,15 +90,18 @@
     "master": [
       "Publish",
       "Pdf"
+    ],
+    "previewDemo": [
+      "Publish",
+      "PDF"
     ]
   },
-  "need_generate_pdf_url_template": true,
+  "need_generate_pdf_url_template": false,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
   },
-  "need_generate_intellisense": false,
   "dependent_packages": [
     {
       "id": "memberpage.plugins",
@@ -104,5 +111,6 @@
       "version": "latest"
     }
   ],
+  "need_generate_intellisense": false,
   "toc_path_need_to_split": "api/toc.yml"
 }
